@@ -1,6 +1,5 @@
 package com.cydeo.tests.DAY10_Upload_Actions_Jsexecuter;
 
-import com.cydeo.tests.base.TestBase;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
 import com.github.javafaker.Faker;
@@ -9,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class Task1_Registration extends TestBase {
+public class Task1_Registration{
 
     @Test
     public void registration_form_test(){
