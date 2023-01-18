@@ -16,7 +16,7 @@ public abstract class TestBase {
         driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-driver.get("https://practice.cydeo.com/registration_form");
+
     }
     @AfterMethod
     public void tearDown(){
