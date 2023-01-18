@@ -7,13 +7,12 @@ import java.util.*;
 public class ConfigurationReader {
 
     //1- Create the object of Properties
-
     private static Properties properties = new Properties();
 
     static {
 
 
-        try {
+       try {
 
             //2- We need to open the file in java memory: FileInputStream
             FileInputStream file = new FileInputStream("configuration.properties");
