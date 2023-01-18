@@ -19,7 +19,7 @@ public class Task2_Upload_Practice {
         String path="/Users/idris/Desktop/SOFTWARE/HTML CLASS/IMG_8302.jpg";
 
          /*
-        String path ="C:\\Users\\hayat\\Desktop\\note.txt";
+        String path ="C:\\Users\\hayat\\Desktop\\note.txt";.
          */
 
         //3. Upload the file.
