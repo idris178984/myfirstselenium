@@ -17,6 +17,7 @@ public class Task1_Registration{
         //Driver.getDriver() --> driver
         Driver.getDriver().get(ConfigurationReader.getProperty("registration.form.url"));
 
+
         //Create JavaFaker object
         Faker faker = new Faker();
 
