@@ -3,7 +3,6 @@ package com.cydeo.tests.DAY5_DynamikWebElement_TestNG_Intro_DropDowns;
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -32,9 +31,9 @@ public class T4_SimpleDropDown {
         //3. Verify “Simple dropdown” default selected value is correct
         Select simpleDropdown = new Select(driver.findElement(By.xpath("//select[@id='dropdown']")));
 
-        WebElement currentlySelectedOption = simpleDropdown.getFirstSelectedOption();
 
-        String actualSimpleDropdownText = currentlySelectedOption.getText();
+
+        String actualSimpleDropdownText = simpleDropdown.getFirstSelectedOption().getText();
         String expectedSimpleDropdownText = "Please select an option";
 
         //Expected: “Please select an option”
