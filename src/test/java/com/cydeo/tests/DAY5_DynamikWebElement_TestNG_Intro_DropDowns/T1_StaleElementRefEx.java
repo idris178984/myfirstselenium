@@ -1,5 +1,6 @@
 package com.cydeo.tests.DAY5_DynamikWebElement_TestNG_Intro_DropDowns;
 
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -25,7 +26,8 @@ public class T1_StaleElementRefEx {
         //button[@onclick='addElement()']
         WebElement addElementBtn = driver.findElement(By.xpath("//button[.='Add Element']"));
 
-        Thread.sleep(2000);
+       // Thread.sleep(2000);
+        BrowserUtils.sleep(2);
         addElementBtn.click();
 
         //4. Verify “Delete” button is displayed after clicking.
