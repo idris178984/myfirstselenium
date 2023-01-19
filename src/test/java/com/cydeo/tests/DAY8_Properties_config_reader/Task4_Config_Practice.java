@@ -9,7 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Task4_Config_Practice {
-
         //    public WebDriver driver;
 //
 //    @BeforeMethod
@@ -17,7 +16,7 @@ public class Task4_Config_Practice {
 //
 //        //We are getting the browserType dynamically from our configuration.properties file
 //        String browserType = ConfigurationReader.getProperty("browser");
-//        driver = WebDriverFactory.getDriver(browserType);
+   //     driver = WebDriverFactory.getDriver(browserType);
 //
 //        driver.manage().window().maximize();
 //        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
