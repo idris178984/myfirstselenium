@@ -5,10 +5,15 @@ import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 public class Task4 {
 
-    public static void main(String[] args) {
+    //public static void main(String[] args)
+    //
+    @Test
+            public void google_search_test(){
+
 
        // TC #4: Google search
        // 1- Open a chrome browser
