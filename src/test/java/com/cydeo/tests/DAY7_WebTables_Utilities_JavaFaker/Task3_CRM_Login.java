@@ -64,10 +64,13 @@ public class Task3_CRM_Login extends TestBase {
         //Calling my utility method to login helpdesk
         CRM_Utilities.crm_login(driver, "helpdesk2@cybertekschool.com", "UserUser" );
 
+        BrowserUtils.sleep(2);
+
+
         //6. Verify title is as expected:
         //Expected: Portal
         //BrowserUtils.sleep(2);
-        BrowserUtils.verifyTitle(driver, "(1) Portal");
+        BrowserUtils.verifyTitle(driver, "Portal");
 
     }
 }
