@@ -21,7 +21,6 @@ NOTES: DAY 7
 
 - What is the return type?
 - List<WebElement>
-
 - How do we get currently selected option?
 - .getFirstSelectedOption();
 - this method can be used to get the default value
@@ -35,15 +34,12 @@ NOTES: DAY 7
     - selectByIndex
     - selectByValue
     - selectByVisibleText
-
 - Syntax of how do we handle Select dropdown?
 
 #1- We create object of Select class
 #2- We need to locate the dropdown <select> tag itself and pass it into the Select constructor.
 
     Select dropdownName = new Select(driver.findElement(By.LOCATOR));
-
-
 #3- We can use the object for handling the dropdowns.
 
     dropdownName.selectByVisibleText();
