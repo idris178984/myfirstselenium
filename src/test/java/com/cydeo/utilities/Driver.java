@@ -28,7 +28,7 @@ public class Driver {
      */
     public static WebDriver getDriver(){
 
-        if (driver == null){
+        if (driver == null){//TODO in order to  have null, we have opurtunity to choose browser from conf.properties.
 
             /*
             We read our browserType from configuration.properties.
