@@ -129,5 +129,5 @@ js.executeScript("arguments[0].scrollIntoView(true)", cydeoLink, homeLink, someO
 js.executeScript("        --> this method accepts and applies the javascript method
 arguments[0]            --> here we are passing the index number of the argument
 .scrollIntoView(true)"    --> scroll until the argument[0] is in visible on the screen
-, cydeoLink);            --> this is where we pass our arguments
+, cydeoLink);            --> this is where we pass our arguments.
 
