@@ -42,7 +42,8 @@ Today's schedule:
 
 - When do we have NoSuchElementException?
 #1- Wrong locator provided
-#2- Synchronization: when browser driver and browser are not on the same page, driver will try to find a web element that is not loaded yet. If this happens, it will throw NoSuchElementException.
+#2- Synchronization: when browser driver and browser are not on the same page,
+driver will try to find a web element that is not loaded yet. If this happens, it will throw NoSuchElementException.
 
 - .click();
 - What does it do?
@@ -157,7 +158,7 @@ ex: <a href="https://tesla.com" name="uh68" class="ff58" id="bb22"> TESLA CYBERT
 
 syntax: driver.findElement(By.name("uh68")).getText() --> TESLA CYBERTRUCK
 
-- .getAttribute();
+- .getAttribute();TODO
 - What does it do?
 - It will accept an attribute and return its value.
 - It accepts a String argument
@@ -235,7 +236,7 @@ ex#2: ex: <a href="https://tesla.com" name="uh68" class="ff58" id="bb22"> TESLA 
     a[href='https://tesla.com']
 
 
-- cssSelector has another syntax, but it works with id and class attributes only.
+- cssSelector has another syntax, but it works with id and class attributes only.TODO
 
 - . stands for class attribute
 - # stands for id attribute
@@ -320,7 +321,7 @@ EXPLANATIONS:
 
 #4- //*[@attribute='value']
 
-    We are saying, we do not care about which tagName, return us the web element with matching attribute and value result
+    We are saying, we do not care about which tagName, return us the web element with matching attribute and value result... TODO
 
 
  chro path'
