@@ -95,7 +95,9 @@ public class TestCase1 {
                 .sendKeys("1234")
                 .sendKeys(Keys.TAB)
                 .sendKeys(Keys.TAB)
-                .sendKeys("1234567").perform();
+                .sendKeys("1234567")
+                .sendKeys(Keys.TAB)
+                .sendKeys("1234").perform();
 
 
 
