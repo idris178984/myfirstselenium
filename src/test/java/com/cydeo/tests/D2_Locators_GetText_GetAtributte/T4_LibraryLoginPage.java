@@ -1,5 +1,6 @@
 package com.cydeo.tests.D2_Locators_GetText_GetAtributte;
 
+import com.cydeo.utilities.Driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -31,5 +32,8 @@ public class T4_LibraryLoginPage {
 
         //6. Verify: visually “Sorry, Wrong Email or Password”
         //displayed
+
+        WebElement Sorry= Driver.getDriver().findElement(By.xpath("//div[.='Sorry, Wrong Email or Password']"));
+        System.out.println("Sorry.isDisplayed() = " + Sorry.isDisplayed());
     }
 }
