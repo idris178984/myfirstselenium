@@ -19,7 +19,7 @@ public class PomTestCase1 {
     }
     @Test
     public void TestCase1_test(){
-        testCase1.homePage.isDisplayed();
+       testCase1.homePage.isDisplayed();
         testCase1.signUp.click();
         testCase1.newUserSignUp.isDisplayed();
 
