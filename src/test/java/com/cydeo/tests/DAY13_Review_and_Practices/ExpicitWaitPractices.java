@@ -40,7 +40,7 @@ public class ExpicitWaitPractices {
         try {
             //assertFalse method will pass the test if the boolean value returned is: false
             Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-            Assert.assertTrue(!dynamicControlsPage.checkbox.isDisplayed());
+           // Assert.assertTrue(!dynamicControlsPage.checkbox.isDisplayed());
             Assert.assertFalse(dynamicControlsPage.checkbox.isDisplayed());
         }catch (NoSuchElementException n){
             Assert.assertTrue(true);
