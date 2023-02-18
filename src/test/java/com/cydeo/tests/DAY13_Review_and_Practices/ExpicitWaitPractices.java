@@ -28,9 +28,9 @@ public class ExpicitWaitPractices {
         dynamicControlsPage.removeButton.click();
 
         //4- Wait until “loading bar disappears”
-//        Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-//        wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loadingBar));
+       // Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+       // WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+       // wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loadingBar));
 
         BrowserUtils.waitForInvisibilityOf(dynamicControlsPage.loadingBar);
 
@@ -40,7 +40,8 @@ public class ExpicitWaitPractices {
         try {
             //assertFalse method will pass the test if the boolean value returned is: false
             Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-           // Assert.assertTrue(!dynamicControlsPage.checkbox.isDisplayed());
+            Assert.assertTrue(!dynamicControlsPage.checkbox.isDisplayed());
+
             Assert.assertFalse(dynamicControlsPage.checkbox.isDisplayed());
         }catch (NoSuchElementException n){
             Assert.assertTrue(true);
