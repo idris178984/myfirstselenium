@@ -23,6 +23,7 @@ public class T5_GetText_GetAttribute {
         //Expected: Registration form
         String expectedHeaderText = "Registration form";
         String actualHeaderText = headerText.getText(); // will return "Registration form" as String
+        System.out.println("actualHeaderText = " + actualHeaderText);
 
         if (actualHeaderText.equals(expectedHeaderText)){
             System.out.println("Header text verification PASSED!");
@@ -40,6 +41,7 @@ public class T5_GetText_GetAttribute {
         // Expected: first name
         String expectedPlaceHolder = "first name";
         String actualPlaceHolder = firstNameInput.getAttribute("placeholder");//TODO
+        System.out.println("actualPlaceHolder = " + actualPlaceHolder);
 
         if (actualPlaceHolder.equals(expectedPlaceHolder)){
             System.out.println("Placeholder text verification PASSED!");
