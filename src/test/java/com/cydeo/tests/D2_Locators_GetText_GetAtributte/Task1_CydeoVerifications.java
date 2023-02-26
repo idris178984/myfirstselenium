@@ -21,6 +21,8 @@ public class Task1_CydeoVerifications {
        // Expected: cydeo
         String expectedUrl="cydeo";
         String actualUrl= driver.getCurrentUrl();
+        System.out.println("actualUrl = " + actualUrl);
+        System.out.println("expectedUrl = " + expectedUrl);
 
         if(actualUrl.contains(expectedUrl)){
             System.out.println("URL VERİFİCATİON PASSED");
@@ -38,7 +40,7 @@ public class Task1_CydeoVerifications {
         }else{
             System.out.println("TİTLE VERİFİCATİON FAİLED");
         }
-        driver.close();
+        //driver.close();
 
     }
 }
